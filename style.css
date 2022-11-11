@@ -45,7 +45,6 @@ header {
     justify-content: space-between;
     width: calc(100vw - 50px);
     margin: 25px;
-    position: fixed;
     top: 0;
     left: 0;
     z-index: 2;
@@ -69,7 +68,7 @@ header .dropdown {
 
 
 .about-me {
-    margin: 180px 25px 0 25px;
+    margin: 100px 25px 0 25px;
 }
 .about-me p {
     margin: 0 0 15px 0;
@@ -77,13 +76,13 @@ header .dropdown {
 }
 .resume {
     display: none;
-    margin: 180px 25px 0 25px;
+    margin: 100px 25px 0 25px;
 }
 .resume p {
     line-height: 1.5;
 }
 .projects {
-    margin: 180px 25px 0 25px;
+    margin: 100px 25px 0 25px;
     display: none;
     justify-content: space-between;
     width: calc(100vw - 50px);
@@ -158,18 +157,21 @@ footer .links {
         font-size: 16px;
     }
 
+    header {
+        margin: 15px 25px 25px 25px;
+    }
     header .bar p {
         padding: 5px 0 0 0;
     }
 
     .about-me {
-        margin: 100px 25px 0 25px;
+        margin: 20px 25px 0 25px;
     }
     .resume {
-        margin: 100px 25px 0 25px;
+        margin: 20px 25px 0 25px;
     }
     .projects {
-        margin: 100px 25px 0 25px;
+        margin: 20px 25px 0 25px;
     }
 
     #photo {
@@ -179,36 +181,7 @@ footer .links {
 }
 
 @media (max-height: 700px) {
-
-    html {
-        font-size: 16px;
-    }
-
-    button {
-        font-size: 16px;
-    }
-
-    header .bar p {
-        padding: 5px 0 0 0;
-    }
-
-    .about-me {
-        margin: 80px 25px 0 25px;
-    }
-    .resume {
-        margin: 80px 25px 0 25px;
-    }
-    .projects {
-        margin: 80px 25px 0 25px;
-    }
-
     .projects img {
         display: none;
-    }
-
-
-    #photo {
-        height: 300px;
-        width: 400px;
     }
 }
