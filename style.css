@@ -137,7 +137,7 @@ footer .links {
     width: 320px;
 }
 #photo {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
     height: 600px;
