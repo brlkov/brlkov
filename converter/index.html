@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valute converter</title>
+    <link rel="stylesheet" href="converter-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+
+<div class="converter">
+    <div class="dropdown">
+        <button class="dropdown-button">Valute</button>
+        <div class="dropdown-content">
+            <div class="buttons">
+                <button id="valute-1">USD</button>
+                <button id="valute-2">EUR</button>
+                <button id="valute-3">BYN</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="calc">
+        <p>Current course</p>
+        <p id="course"></p>
+        <div class="input">
+            <input type="text" placeholder="Calculate" autocomplete="off" class="inp">
+            <button class="search-button"><img src="../images/search-button.png" width="20px" height="20px" alt=""></button>
+        </div>
+        <p id="result"></p>
+    </div>
+</div>
+
+
+<script src="converter-script.js" defer></script>
+
+</body>
+
+</html>

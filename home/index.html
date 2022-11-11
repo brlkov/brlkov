@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="home-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+
+<header>
+    <section>
+        <button id="ab">About me</button>
+        <a target="_blank" href="https://spb.hh.ru/resume/98fa2325ff09b234dd0039ed1f684b52475a6c">Resume</a>
+        <button id="pr">Projects</button>
+    </section>
+</header>
+
+
+<main class="about">
+    <div class="info">
+        <h1>Sergey Burlakov</h1>
+        <p>Junior frontend-developer.<br>22 years old.<br>Saint-Petersburg, Russia.</p>
+    </div>
+
+    <div class="photo">
+        <div class="slides">
+            <input type="radio" id="rad1">
+            <input type="radio" id="rad2">
+            <input type="radio" id="rad3">
+
+            <div id="slide1"><img src="../images/1.JPG" alt=""></div>
+            <div id="slide2"><img src="../images/2.JPG" alt=""></div>
+            <div id="slide3"><img src="../images/3.JPG" alt=""></div>
+
+        </div>
+
+        <div class="navigation-manual">
+            <label for="rad1" id="manual-btn1"></label>
+            <label for="rad2" id="manual-btn2"></label>
+            <label for="rad3" id="manual-btn3"></label>
+        </div>
+
+    </div>
+
+</main>
+
+
+
+<main class="projects">
+    <h2 id="projectsBegin">Web-projects</h2>
+    <section>
+        <a id="pr1" href="../weather">
+            <div>
+                <p>Weather App<br>Check the weather in your city.<br>Temperature, humidity, wind speed.</p>
+                <img src="../images/weather.png" alt="">
+            </div>
+        </a>
+
+        <a id="pr2" href="../world-time">
+            <div>
+                <p>World Time<br>Actual time in your city.<br>Also check it in others.</p>
+                <img src="../images/time.png" alt="">
+            </div>
+        </a>
+
+        <a id="pr3" href="../converter">
+            <div>
+                <p>Valute converter<br>Actual central bank course.<br>Convert USD, EUR, BYN to RUB.</p>
+                <img src="../images/converter.png" alt="">
+            </div>
+        </a>
+
+        <a id="pr4" href="../tap-the-squirrel">
+            <div>
+                <p>Tap the squirrel<br>Click on the squirrel and try to score<br>as many points as possible!</p>
+                <img src="../images/squirrel.png" alt="">
+            </div>
+        </a>
+
+        <a id="pr5" href="../paper-siccorse-rock">
+            <div>
+                <p>Paper-Scissors-Rock<br>Popular world-wide game.<br>Play with computer.</p>
+                <img src="../images/paper-siccorse-rock.png" alt="">
+            </div>
+        </a>
+
+        <a id="pr6" href="../flappy-angry">
+            <div>
+                <p>Flappy Angry<br>Don't hit the sticks!<br>Based on the famous game.</p>
+                <img src="../images/bird.png" alt="">
+            </div>
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <div class="links">
+        <div class="icons-container">
+            <a target="_blank" href="https://www.t.me/brlkov"><img src="../images/telegram.png" alt=""></a>
+            <a target="_blank" href="https://github.com/brlkov"><img src="../images/github.png" alt=""></a>
+            <a target="_blank" href="mailto:sergeyburlakovspb@gmail.com"><img src="../images/mail.png" alt=""></a>
+            <button id="lang">
+                <img src="../images/lang.png" alt="">
+            </button>
+        </div>
+    </div>
+</footer>
+
+<script src="home-script.js" defer></script>
+
+</body>
+
+</html>

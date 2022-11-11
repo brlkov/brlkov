@@ -1,0 +1,31 @@
+html {
+    background: #3d3d3d;
+    font-family: Raleway, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #3d3d3d;
+    font-size: 20px;
+    color: white;
+    margin: 0;
+}
+
+#count {
+    margin: 0;
+}
+
+button {
+    background: #3d3d3d;
+    border: none;
+    outline: #3d3d3d;
+}
+
+img {
+    width: 250px;
+    height: 150px;
+}
