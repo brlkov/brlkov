@@ -5,12 +5,14 @@ document.querySelector('#menu').addEventListener('click', () => {
     document.querySelector('#resume').style.display = "block"
     document.querySelector('#p').style.display = "block"
     document.querySelector('.about-me').style.display = "none"
+    document.querySelector('.about-me-more').style.display = "none"
     document.querySelector('.projects').style.display = "none"
     document.querySelector('.resume').style.display = "none"
 });
 
 document.querySelector('#brlkov').addEventListener('click', () => {
     document.querySelector('.about-me').style.display = "block"
+    document.querySelector('.about-me-more').style.display = "none"
     document.querySelector('.projects').style.display = "none"
     document.querySelector('.resume').style.display = "none"
     document.querySelector('.dropdown').style.display = "none"
@@ -18,7 +20,8 @@ document.querySelector('#brlkov').addEventListener('click', () => {
 });
 
 document.querySelector('#about').addEventListener('click', () => {
-    document.querySelector('.about-me').style.display = "block"
+    document.querySelector('.about-me-more').style.display = "block"
+    document.querySelector('.about-me').style.display = "none"
     document.querySelector('.projects').style.display = "none"
     document.querySelector('.resume').style.display = "none"
     document.querySelector('#projects').style.display = "none"
@@ -27,6 +30,7 @@ document.querySelector('#about').addEventListener('click', () => {
 
 document.querySelector('#projects').addEventListener('click', () => {
     document.querySelector('.about-me').style.display = "none"
+    document.querySelector('.about-me-more').style.display = "none"
     document.querySelector('.resume').style.display = "none"
     document.querySelector('.projects').style.display = "flex"
     document.querySelector('#about').style.display = "none"
@@ -35,6 +39,7 @@ document.querySelector('#projects').addEventListener('click', () => {
 
 document.querySelector('#resume').addEventListener('click', () => {
     document.querySelector('.about-me').style.display = "none"
+    document.querySelector('.about-me-more').style.display = "none"
     document.querySelector('.projects').style.display = "none"
     document.querySelector('.resume').style.display = "block"
     document.querySelector('#about').style.display = "none"
@@ -44,7 +49,7 @@ document.querySelector('#resume').addEventListener('click', () => {
 
 
 
-
+let counter = 2;
 
 document.getElementById("next").addEventListener("click", () =>
 {
@@ -77,35 +82,3 @@ document.getElementById("next").addEventListener("click", () =>
         counter = 1;
     }
 });
-
-let counter = 2;
-
-setInterval(() => {
-    if(counter === 1) {
-        document.getElementById("pr1").style.display = "block";
-        document.getElementById("pr2").style.display = "none";
-        document.getElementById("pr3").style.display = "none";
-        document.getElementById("pr4").style.display = "none";
-    }
-    else if(counter === 2) {
-        document.getElementById("pr1").style.display = "none";
-        document.getElementById("pr2").style.display = "block";
-        document.getElementById("pr3").style.display = "none";
-        document.getElementById("pr4").style.display = "none";
-    }
-    else if(counter === 3) {
-        document.getElementById("pr1").style.display = "none";
-        document.getElementById("pr2").style.display = "none";
-        document.getElementById("pr3").style.display = "block";
-        document.getElementById("pr4").style.display = "none";
-    }
-    else if(counter === 4) {
-        document.getElementById("pr1").style.display = "none";
-        document.getElementById("pr2").style.display = "none";
-        document.getElementById("pr3").style.display = "none";
-        document.getElementById("pr4").style.display = "block";
-    }
-    counter++;
-    if (counter > 4){counter = 1;}
-}, 10000);
-

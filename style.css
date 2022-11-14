@@ -74,6 +74,16 @@ header .dropdown {
     margin: 0 0 15px 0;
     line-height: 1.5;
 }
+.about-me-more {
+    width: calc(100vw - 100px);
+    max-width: 700px;
+    display: none;
+    margin: 100px 25px 0 25px;
+}
+.about-me-more p {
+    margin: 0 0 15px 0;
+    line-height: 1.5;
+}
 .resume {
     display: none;
     margin: 100px 25px 0 25px;
@@ -118,6 +128,17 @@ header .dropdown {
 .projects img {
     margin-top: 20px;
     opacity: 0.7;
+}
+
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
 }
 
 
@@ -170,6 +191,9 @@ footer .links {
     }
 
     .about-me {
+        margin: 20px 25px 0 25px;
+    }
+    .about-me-more {
         margin: 20px 25px 0 25px;
     }
     .resume {

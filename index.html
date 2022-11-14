@@ -13,7 +13,7 @@
 <body>
 
 <header>
-    <div class="bar">
+    <div class="bar fade">
         <button id="brlkov">brlkov</button>
         <p id="p">></p>
         <div class="dropdown">
@@ -22,11 +22,11 @@
             <button id="resume">резюме</button>
         </div>
     </div>
-    <button id="menu">меню</button>
+    <button id="menu" class="fade">меню</button>
 </header>
 
 
-<div class="about-me">
+<div class="about-me fade">
     <p>Сергей Бурлаков</p>
     <p>Фронтенд разработчик из Санкт-Петербурга.</p>
     <p>
@@ -37,7 +37,28 @@
     </p>
 </div>
 
-<div class="resume">
+
+<div class="about-me-more fade">
+    <p>Сергей Бурлаков</p>
+    <p>Фронтенд разработчик из Санкт-Петербурга.</p>
+    <p>
+        Учусть в СПб ГЭТУ "ЛЭТИ" на компьютерной безопасности
+    </p>
+    <p>
+        Занимаюсь разработкой веб-приложений (SPA) и пользовательских интерфейсов
+        с использованием React.js, а так же версткой сайтов (MPA) на "чистых" HTML+CSS+JS.
+    </p>
+    <p>
+        В своих проектах использовал MobX, Sass, Bootstrap, Canvas, Webpack, Websocket,
+        БД (личный фаворит - PostgreSQL). Владею основами Backend разработки на Node.js.<br>
+    </p>
+    <p>
+        Имею навыки в Photoshop.
+    </p>
+</div>
+
+
+<div class="resume fade">
     <p>
         С моим резюме можно ознакомиться по <a target="_blank" href="https://spb.hh.ru/resume/98fa2325ff09b234dd0039ed1f684b52475a6c">ссылке</a><br>
         или скачать pdf <a download href="static/BurlakovSergeyResume.pdf">тут</a>
@@ -46,7 +67,7 @@
 
 <div class="projects">
     <div class="projects-container">
-        <div id="pr1">
+        <div id="pr1" class="fade">
             <a target="_blank" href="http://185.20.225.161:1010">Web paint</a>
             <p>Стек: React.js + Node.js + Websocket + MobX + Canvas + Sass</p>
             <p>
@@ -57,7 +78,7 @@
             </p>
             <img height="60px" width="100px" src="images/brush.png" alt="webpaint">
         </div>
-        <div id="pr2">
+        <div id="pr2" class="fade">
             <a target="_blank" href="http://185.20.225.161:2020">Test blog</a>
             <p>Стек: React.js + Css</p>
             <p>
@@ -67,7 +88,7 @@
             </p>
             <img height="100px" width="100px" src="images/post.png" alt="post">
         </div>
-        <div id="pr3">
+        <div id="pr3" class="fade">
             <a target="_blank" href="http://185.20.225.161:3030">Coin shop</a>
             <p>Стек: React.js + Node.js + Express + PostgeSQL + MobX + Bootstrap </p>
             <p>
@@ -77,7 +98,7 @@
             </p>
             <img height="100px" width="100px" src="images/coin.png" alt="coin">
         </div>
-        <div id="pr4">
+        <div id="pr4" class="fade">
             <a target="_blank" href="home">Personal site</a>
             <p>Стек: Html + Css + Js</p>
             <p>
@@ -93,14 +114,14 @@
 
 
 <footer>
-    <div class="links">
+    <div class="links fade">
         <a target="_blank" href="https://www.t.me/brlkov">телеграмм</a>
         <a target="_blank" href="https://github.com/brlkov">гитхаб</a>
         <a target="_blank" href="mailto:sergeyburlakovspb@gmail.com">почта</a>
     </div>
 </footer>
 
-<img id="photo" src="images/photo.png" alt="photo">
+<img id="photo" class="fade" src="images/photo.png" alt="photo">
 
 <script src="script.js" defer></script>
 
