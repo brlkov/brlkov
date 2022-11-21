@@ -58,6 +58,7 @@ document.getElementById("next").addEventListener("click", () =>
         document.getElementById("pr2").style.display = "none";
         document.getElementById("pr3").style.display = "none";
         document.getElementById("pr4").style.display = "none";
+        document.getElementById("pr5").style.display = "none";
         counter = 2;
     }
     else if(counter === 2) {
@@ -65,6 +66,7 @@ document.getElementById("next").addEventListener("click", () =>
         document.getElementById("pr2").style.display = "block";
         document.getElementById("pr3").style.display = "none";
         document.getElementById("pr4").style.display = "none";
+        document.getElementById("pr5").style.display = "none";
         counter = 3;
     }
     else if(counter === 3) {
@@ -72,6 +74,7 @@ document.getElementById("next").addEventListener("click", () =>
         document.getElementById("pr2").style.display = "none";
         document.getElementById("pr3").style.display = "block";
         document.getElementById("pr4").style.display = "none";
+        document.getElementById("pr5").style.display = "none";
         counter = 4;
     }
     else if(counter === 4) {
@@ -79,6 +82,15 @@ document.getElementById("next").addEventListener("click", () =>
         document.getElementById("pr2").style.display = "none";
         document.getElementById("pr3").style.display = "none";
         document.getElementById("pr4").style.display = "block";
+        document.getElementById("pr5").style.display = "none";
+        counter = 5;
+    }
+    else if(counter === 5) {
+        document.getElementById("pr1").style.display = "none";
+        document.getElementById("pr2").style.display = "none";
+        document.getElementById("pr3").style.display = "none";
+        document.getElementById("pr4").style.display = "none";
+        document.getElementById("pr5").style.display = "block";
         counter = 1;
     }
 });

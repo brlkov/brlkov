@@ -75,7 +75,6 @@ header .dropdown {
     line-height: 1.5;
 }
 .about-me-more {
-    width: calc(100vw - 100px);
     max-width: 700px;
     display: none;
     margin: 100px 25px 0 25px;
@@ -109,7 +108,7 @@ header .dropdown {
 .projects-container #pr1 {
     display: block;
 }
-.projects-container #pr2, #pr3, #pr4 {
+.projects-container #pr2, #pr3, #pr4, #pr5 {
     display: none;
 }
 .projects-container p {
