@@ -1,0 +1,89 @@
+html {
+    background: url("../images/time-background.png") no-repeat center center;
+    background-size: cover;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+.worldTime {
+    border: 1px solid black;
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: 1s;
+}
+
+.currentTime {
+    text-align: center;
+}
+
+.cities {
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cities div {
+    text-align: center;
+    min-height: 70px;
+    min-width: 120px;
+    flex: 2;
+}
+.cities div p {
+    margin: 0;
+}
+
+.search {
+    margin: 0 0 20px 0;
+    width: 88%;
+    display: flex;
+    justify-content: space-around;
+}
+.search button {
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: 1px solid black;
+}
+.search button:hover {
+    transform: scale(1.05);
+}
+.search input {
+    height: 24px;
+    width: calc(100% - 90px);
+    margin: 0;
+    background: none;
+    border: 1px solid black;
+    border-radius: 0;
+    padding: 2px 10px;
+}
+.search input:hover {
+    transform: scale(1.02);
+}
+
+#searched-city {
+    text-align: center;
+}
+#searched-city p {
+    margin: 0;
+}

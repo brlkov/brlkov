@@ -1,0 +1,20 @@
+html {
+    background: url("../images/grey.png");
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#counter {
+    margin: 0 0 45px 0;
+    font-family: Impact, sans-serif;
+    font-size: 55px;
+    font-weight: 900;
+    color: #050505;
+}

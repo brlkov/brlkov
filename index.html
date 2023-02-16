@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Brlkov</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+
+<header>
+    <div class="bar fade">
+        <button id="brlkov">brlkov</button>
+        <p id="p">></p>
+        <div class="dropdown">
+            <button id="about">обо мне</button>
+            <button id="projects">проекты</button>
+            <button id="resume">резюме</button>
+        </div>
+    </div>
+    <button id="menu" class="fade">меню</button>
+</header>
+
+
+<div class="about-me fade">
+    <p>Сергей Бурлаков</p>
+    <p>Фронтенд разработчик из Санкт-Петербурга.</p>
+    <p>
+        Занимаюсь разработкой клиент-серверных веб-приложений (SPA)<br>
+        и пользовательских интерфейсов с использованием React.js<br>
+        а так же версткой сайтов (MPA)<br>
+        на "чистых" HTML+CSS+JS<br>
+    </p>
+</div>
+
+
+<div class="about-me-more fade">
+    <p>Сергей Бурлаков</p>
+    <p>Фронтенд разработчик из Санкт-Петербурга.</p>
+    <p>
+        Учусть в СПб ГЭТУ "ЛЭТИ" на компьютерной безопасности
+    </p>
+    <p>
+        Занимаюсь разработкой веб-приложений (SPA) и пользовательских интерфейсов
+        с использованием React.js, а так же версткой сайтов (MPA) на "чистых" HTML+CSS+JS.
+    </p>
+    <p>
+        В своих проектах использовал MobX, Sass, Bootstrap, Canvas, Webpack, Websocket,
+        БД. Владею основами Backend разработки на Node.js.<br>
+    </p>
+    <p>
+        Имею навыки в Photoshop.
+    </p>
+</div>
+
+
+<div class="resume fade">
+    <p>
+        С моим резюме можно ознакомиться по <a target="_blank" href="https://spb.hh.ru/resume/98fa2325ff09b234dd0039ed1f684b52475a6c">ссылке</a><br>
+        или скачать pdf <a download href="static/BurlakovSergeyResume.pdf">тут</a>
+    </p>
+</div>
+
+<div class="projects">
+    <div class="projects-container">
+        <div id="pr1" class="fade">
+            <a target="_blank" href="http://185.20.225.161:1010">Web paint</a>
+            <p>Стек: React.js + Node.js + Websocket + MobX + Canvas + Sass</p>
+            <p>
+                Клиент-серверное приложение для совместного рисования на одном холсте.
+                Работает в режиме реального времени, изменения которые внес один пользователь
+                тут же будут отображаться у всех остальных подключенных к данной сессии.
+                Есть возможность сохранять получившееся изображение к себе на компьютер.
+            </p>
+            <img height="60px" width="100px" src="images/brush.png" alt="webpaint">
+        </div>
+        <div id="pr2" class="fade">
+            <a target="_blank" href="http://185.20.225.161:2020">Fake blog</a>
+            <p>Стек: React.js + Css</p>
+            <p>
+                Данное приложение использует стороннее api с jsonplaceholder.typicode.com
+                имитируя постраничную подгрузку постов в блог.
+                Реализованы возможности поиска по записям, их сортировка, добавление своего нового поста.
+            </p>
+            <img height="100px" width="100px" src="images/post.png" alt="post">
+        </div>
+        <div id="pr3" class="fade">
+            <a target="_blank" href="http://185.20.225.161:3030">Coin shop</a>
+            <p>Стек: React.js + Node.js + Express + PostgeSQL + MobX + Bootstrap </p>
+            <p>
+                Интернет магазин монет. Присутствует регистрация и авторизация по jwt токену.
+                При входе с ролью админа открывается возможность добавлять новую страну и продукты.
+                Каждую монету можно рассмотреть получше на ее отдельной странице.
+            </p>
+            <img height="100px" width="100px" src="images/coin.png" alt="coin">
+        </div>
+        <div id="pr4" class="fade">
+            <a target="_blank" href="http://185.20.225.161:4040">Todo list</a>
+            <p>Стек: React.js + Scss + Node.js + PostgeSQL</p>
+            <p>
+                Лист задач с собсвтенным Rest Api. Можно создавать, редактировать, удалять задачу,
+                а так же помечать как выполненную. Если срок выполнения истек,
+                будет отображаться соответствующее оповещение.
+                Доступно неограниченное прикрепление файлов к задаче.
+            </p>
+            <img height="100px" width="100px" src="images/todo.png" alt="todo">
+        </div>
+        <div id="pr5" class="fade">
+            <a target="_blank" href="home">Mini apps</a>
+            <p>Стек: Html + Css + Js</p>
+            <p>
+                На этой странице можно найти небольшие приложения, написанные без использования фреймворков -
+                конвертер валют, погода, мировое время, а так же несколько игр, например,
+                камень-ножницы-бумага или аналог всем известной flappy bird.
+            </p>
+            <img height="80px" width="80px" src="images/site.png" alt="coin">
+        </div>
+    </div>
+    <button id="next">>>></button>
+</div>
+
+
+<footer>
+    <div class="links fade">
+        <a target="_blank" href="https://www.t.me/brlkov">телеграмм</a>
+        <a target="_blank" href="https://github.com/brlkov">гитхаб</a>
+        <a target="_blank" href="mailto:sergeyburlakovspb@gmail.com">почта</a>
+    </div>
+</footer>
+
+<img id="photo" class="fade" src="images/photo.png" alt="photo">
+
+<script src="script.js" defer></script>
+
+</body>
+
+</html>

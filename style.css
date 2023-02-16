@@ -1,0 +1,218 @@
+html {
+    background-color: #e1e1e1;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+}
+
+
+
+button {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+    background: none;
+    border: none;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+
+a {
+    color: #0c00af;
+}
+a:checked {
+    color: #0c00af;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100vw - 50px);
+    margin: 25px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+header .bar {
+    display: flex;
+}
+header .bar p {
+    display: none;
+    margin: 0;
+    padding: 2px 0 0 0;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+}
+header .dropdown {
+    display: none;
+    flex-direction: column;
+}
+
+
+
+.about-me {
+    margin: 100px 25px 0 25px;
+}
+.about-me p {
+    margin: 0 0 15px 0;
+    line-height: 1.5;
+}
+.about-me-more {
+    max-width: 700px;
+    display: none;
+    margin: 100px 25px 0 25px;
+}
+.about-me-more p {
+    margin: 0 0 15px 0;
+    line-height: 1.5;
+}
+.resume {
+    display: none;
+    margin: 100px 25px 0 25px;
+}
+.resume p {
+    line-height: 1.5;
+}
+.projects {
+    margin: 100px 25px 0 25px;
+    display: none;
+    justify-content: space-between;
+    width: calc(100vw - 50px);
+    max-width: 750px;
+    z-index: 2;
+}
+.projects-container {
+    width: calc(100vw - 100px);
+    max-width: 700px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.projects-container #pr1 {
+    display: block;
+}
+.projects-container #pr2, #pr3, #pr4, #pr5 {
+    display: none;
+}
+.projects-container p {
+    margin: 15px 0 0 0;
+    line-height: 1.5;
+}
+#next {
+    height: 30px;
+    width: 50px;
+    margin: 0;
+    position: relative;
+    bottom: 5px;
+    cursor: pointer;
+}
+
+.projects img {
+    margin-top: 20px;
+    opacity: 0.7;
+}
+
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: left;
+    position: fixed;
+    margin: 25px;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+footer .links {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+}
+#photo {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 640px;
+    width: 800px;
+}
+
+
+@media (max-width: 1300px) {
+    #photo {
+        height: 512px;
+        width: 640px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    html {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    header {
+        margin: 15px 25px 25px 25px;
+    }
+    header .bar p {
+        padding: 5px 0 0 0;
+    }
+
+    .about-me {
+        margin: 20px 25px 0 25px;
+    }
+    .about-me-more {
+        margin: 20px 25px 0 25px;
+    }
+    .resume {
+        margin: 20px 25px 0 25px;
+    }
+    .projects {
+        margin: 20px 25px 0 25px;
+    }
+
+    #photo {
+        height: 384px;
+        width: 480px;
+    }
+}
+
+@media (max-width: 500px) {
+    #photo {
+        display: none;
+    }
+    footer .links {
+        width: calc(100vw - 50px);
+    }
+}

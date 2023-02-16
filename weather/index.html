@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+
+
+<header>
+    <h1>Weather</h1>
+</header>
+
+
+<main>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Search" autocomplete="off" class="search-bar">
+            <button class="search-button"><img src="../images/search-button.png" width="12px" height="12px" alt=""></button>
+        </div>
+        <div class="weather loading">
+            <h2 class="city"></h2>
+            <div class="temp-icon">
+                <h1 class="temp"></h1>
+                <img src="" width="37.5px" height="37.5px" class="icon" alt="">
+            </div>
+            <div class="description"></div>
+            <div class="humidity"></div>
+            <div class="wind"></div>
+        </div>
+    </div>
+</main>
+
+
+<script src="weather-script.js" defer></script>
+</body>
+
+</html>

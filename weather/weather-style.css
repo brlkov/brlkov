@@ -1,0 +1,98 @@
+html {
+    font-family: Raleway, sans-serif;
+    background: url("../images/cloudy.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+header {
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: black;
+    opacity: 0.7;
+    color: white;
+    padding: 30px;
+    margin: 0 20px;
+    height: 30px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.card .search-bar {
+    border: none;
+    padding: 5px 15px;
+    margin: 0;
+    height: 20px;
+    width: calc(100% - 70px);
+    border-radius: 15px;
+    color: black;
+    opacity: 0.7;
+    transition: all 0.3s;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+}
+.card .search-bar:hover {
+    opacity: 0.6;
+    transition: all 0.3s;
+}
+
+.card .search-button {
+    border: none;
+    padding: 0;
+    margin: 0 0 0 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    color: black;
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+.card .search-button:hover {
+    opacity: 0.6;
+    transition: all 0.3s;
+}
+
+.card .temp-icon {
+    display: flex;
+    margin: 20px 0;
+}
+.card .temp-icon .icon {
+    margin: 0 20px;
+}
+.card .temp-icon .icon img {
+    border: none;
+}
+.card .temp-icon .temp {
+    margin: 0;
+}
+.card .description {
+    text-transform: capitalize;
+}
