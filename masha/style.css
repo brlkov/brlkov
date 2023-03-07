@@ -1,0 +1,87 @@
+html {
+    font-family: "Raleway", sans-serif;
+    scroll-behavior: smooth;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+}
+
+
+
+.start {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("masha.jpg") center center;
+    background-size: cover;
+    color: white;
+}
+.start h1 {
+    padding-top: 100px;
+    font-size: 60px;
+}
+.start button {
+    height: 50px;
+    width: 270px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    animation: button 3s infinite;
+}
+.start button:hover {
+    cursor: pointer;
+}
+
+
+
+.firstSlide {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.firstSlide h1 {
+    text-align: center;
+}
+.firstSlide #heart {
+    animation: heart 1.5s infinite;
+}
+
+
+
+@keyframes button {
+    from {
+        border-radius: 10px;
+    }
+    50% {
+        border-radius: 30px;
+        width: 300px;
+    }
+    to {
+        border-radius: 10px;
+    }
+}
+
+@keyframes heart {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
