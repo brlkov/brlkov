@@ -108,7 +108,7 @@ header .dropdown {
 .projects-container #pr1 {
     display: block;
 }
-.projects-container #pr2, #pr3, #pr4, #pr5 {
+.projects-container #pr2, #pr3, #pr4, #pr5, #pr6 {
     display: none;
 }
 .projects-container p {
